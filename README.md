@@ -47,4 +47,4 @@ MIT
 
 ## Example Application
 
-This workspace is being developed alongside a wearable IMU rig for gymnastics movement analysis (handstand entry timing, rotational velocity tracking). See `acrobot-sensors` for the application-specific implementation.
+This workspace is being developed alongside a wearable IMU rig for acrobatic movement analysis (handstand entry timing, rotational velocity tracking). See `acrobot-sensors` for the application-specific implementation.
