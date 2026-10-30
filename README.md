@@ -1,6 +1,6 @@
 # ros2-rust-workspace
 
-**Goal:** Build a 100% Rust-based sensor processing pipeline for an acrobot system designed for human movement training (cartwheels, pirouettes, etc.).
+**Goal:** Build a 100% Rust-based multi-IMU sensor processing pipeline for real-time orientation estimation, targeting low-latency motion capture and human-robot interaction applications.
 
 ## Architecture
 
@@ -8,11 +8,11 @@ The workspace consists of a single Rust crate (sensor_processing) that handles I
 
 ## Sensor Configuration (Target)
 
-| Body Part | IMU | Purpose |
+| Sensor Position | IMU | Purpose |
 |---|---|---|
-| Wrists (2x) | 9-DOF (MPU9250/BNO085) | Hand placement timing, rotation rate |
-| Ankles (2x) | 9-DOF | Dorsiflexion/plantarflexion, foot strike detection |
-| Waist (1x) | 9-DOF | Whole-body yaw rate, pirouette spin counting |
+| Wrist (2×) | 9-DOF (MPU9250/BNO085) | Distal joint orientation, rotation rate |
+| Ankle (2×) | 9-DOF | Joint angle estimation, contact detection |
+| Waist (1×) | 9-DOF | Trunk orientation, whole-body rotation rate |
 
 ## Sensor Processing Pipeline
 
@@ -24,7 +24,6 @@ The workspace consists of a single Rust crate (sensor_processing) that handles I
 ## Build
 
 ```bash
-# Inside devcontainer
 colcon build --packages-select sensor_processing
 source install/setup.bash
 ```
@@ -45,3 +44,7 @@ This project is a learning exercise in Rust-based robotic systems programming. C
 ## License
 
 MIT
+
+## Example Application
+
+This workspace is being developed alongside a wearable IMU rig for gymnastics movement analysis (handstand entry timing, rotational velocity tracking). See `acrobot-sensors` for the application-specific implementation.
