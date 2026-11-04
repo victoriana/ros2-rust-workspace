@@ -57,4 +57,4 @@ MIT
 
 ## Example Application
 
-This workspace is being developed as the core sensing layer for **Acro Spin**, an agentic application focused on real-time acrobatic movement analysis. Acro Spin utilizes this pipeline to track complex dynamics such as handstand entry timing, rotational velocity, and spatial orientation for interactive coaching and feedback.
+This workspace serves as the foundational sensing layer for **Acro Spin**, an agentic application designed for real-time acrobatic movement analysis. Acro Spin utilizes this pipeline to track complex dynamics—including rotational velocity, spatial orientation, and joint angles—to provide interactive feedback and coaching for dynamic athletic movements.
