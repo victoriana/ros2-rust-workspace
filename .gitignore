@@ -1,1 +1,5 @@
-
+/target
+/install
+/build
+/log
+.devcontainer/*.log
