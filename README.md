@@ -18,9 +18,9 @@ The system is designed around a distributed multi-sensor array to capture full k
 
 | Node Type | IMU Type | Data Rate | Purpose |
 | :--- | :--- | :--- | :--- |
-| **Proximal/Core** | 9-DOF (BNO085) | 100Hz | Center-of-mass tracking, global rotation, torso torque |
-| **Distal/Control** | 9-DOF (MPU9250/BNO085) | 100Hz | Distal joint orientation, angular momentum transfer |
-| **Base/Stability** | 9-DOF (MPU9250/BNO085) | 100Hz | Base stability, contact state detection, lateral wobble |
+| **Proximal/Core** | 9-DOF (BNO055) | 100Hz | Center-of-mass tracking, global rotation, torso torque |
+| **Distal/Control** | 9-DOF (BNO055) | 100Hz | Distal joint orientation, angular momentum transfer |
+| **Base/Stability** | 9-DOF (BNO055) | 100Hz | Base stability, contact state detection, lateral wobble |
 
 ## Sensor Processing Pipeline
 
@@ -45,7 +45,7 @@ ros2 run esp32-bridge multi_node_bridge
 ## Hardware
 
 *   **Development Machine:** Intel Core Ultra 9 285K / RTX 5070 / 32GB DDR5
-*   **Target IMUs:** MPU9250 / BNO085 (I2C/SPI)
+*   **Target IMUs:** BNO055 (I2C)
 *   **ROS 2 Distribution:** Jazzy Jalisco (rolling)
 
 ## Contributing
