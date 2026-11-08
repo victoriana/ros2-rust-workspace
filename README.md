@@ -64,6 +64,4 @@ MIT
 ## Example Application
 
 This workspace serves as the foundational sensing layer for **Acro Spin**, an agentic application designed for real-time acrobatic movement analysis. Acro Spin utilizes this pipeline to track complex dynamics—including rotational velocity, spatial orientation, and joint angles—to provide interactive feedback and coaching for dynamic athletic movements.
-```That reply actually finished cleanly — the markdown fence closed properly after the **Example Application** section, so nothing was cut off. The block above is complete and ready to paste into your README starting at `## Hardware`.
 
-One small note: if you're pasting this *below* the existing content rather than replacing it, delete the old `## Hardware` through end-of-file first so you don't end up with duplicate sections.
