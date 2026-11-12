@@ -59,10 +59,9 @@ This project aims to provide reusable, high-performance primitives for ROS 2-Rus
 *   Simulation integration (Gazebo, MuJoCo)
 *   Performance benchmarking against Python-based bridges
 
-## License
-
-MIT
 
 ## Example Application
 
-This workspace serves as the foundational sensing layer for **Acro Spin**, an agentic application designed for real-time acrobatic movement analysis. Acro Spin utilizes this pipeline to track complex dynamics—including rotational velocity, spatial orientation, and axial lean—to provide interactive feedback and coaching for dynamic athletic movements. The initial validation target is pirouette analysis via a single waist-mounted node.
+This workspace serves as the foundational sensing layer for **[Acro-spin](https://github.com/victoriana/acro-spin)**, an agentic application for real-time acrobatic movement analysis. 
+
+Acro-spin consumes this pipeline to track complex dynamics—including rotational velocity, spatial orientation, and axial lean—to provide interactive feedback and coaching for dynamic athletic movements. The initial validation target is pirouette analysis via a single waist-mounted node.
